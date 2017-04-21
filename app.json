@@ -1,0 +1,23 @@
+{
+    "pages": [
+        "pages/clockSifi/canvas",
+        "pages/clockNormal/canvas"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/clockSifi/canvas",
+            "text": "特殊时钟"
+        }, {
+            "pagePath": "pages/clockNormal/canvas",
+            "text": "普通时钟"
+        }],
+        "color": "#000000",
+        "selectedColor": "red"
+    }
+}

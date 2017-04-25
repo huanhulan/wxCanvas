@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/metrix/canvas",
         "pages/clockSifi/canvas",
         "pages/clockNormal/canvas"
     ],
@@ -11,6 +12,9 @@
     },
     "tabBar": {
         "list": [{
+            "pagePath": "pages/metrix/canvas",
+            "text": "metrix"
+        }, {
             "pagePath": "pages/clockSifi/canvas",
             "text": "特殊时钟"
         }, {

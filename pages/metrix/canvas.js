@@ -1,7 +1,10 @@
-var windowWidth, windowHeight, app;
+var windowWidth;
+var windowHeight;
+var app;
 
 class CanvasApp {
-    constructor() {
+    constructor(windowWidth, windowHeight) {
+        console.log(windowWidth, windowHeight)
         this.yPosArray = Array(300).fill(0);
         this.ctx = wx.createCanvasContext('thirdCanvas');
         this.w = windowWidth;
@@ -55,12 +58,13 @@ Page({
             success: function(res) {
                 windowWidth = res.windowWidth;
                 windowHeight = res.windowHeight;
+                app = new CanvasApp(windowWidth, windowHeight);
+                app.run();
             }
         });
     },
     onShow: function(e) {
-        app = new CanvasApp('metrix');
-        app.run();
+        if (app) app.run();
     },
     onHide: function(e) {
         app.stop();

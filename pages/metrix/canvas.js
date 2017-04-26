@@ -4,7 +4,6 @@ var app;
 
 class CanvasApp {
     constructor(windowWidth, windowHeight) {
-        console.log(windowWidth, windowHeight)
         this.yPosArray = Array(300).fill(0);
         this.ctx = wx.createCanvasContext('thirdCanvas');
         this.w = windowWidth;
